@@ -1,0 +1,31 @@
+# Simple TZ Info File for the SFCS if the full TZ Info database is not provided
+#
+# Rule NAME FROM TO - IN ON AT SAVE LETTER/S
+Rule US 2007 max - Mar Sun>=8 2:00 1:00 D
+Rule US 2007 max - Nov Sun>=1 2:00 0 S
+Rule EU 1981 max - Mar lastSun  1:00u 1:00 S
+Rule EU 1996 max - Oct lastSun  1:00u 0 -
+Rule Morocco max - Feb 23  3:00 -1:00 -
+Rule Morocco max - Apr  6  2:00 0 -
+Rule AS 2008 max - Apr Sun>=1 2:00s 0 S
+Rule AS 2008 max - Oct Sun>=1 2:00s 1:00 D
+#
+# Zone NAME  STDOFF RULES FORMAT [UNTIL]
+Zone America/New_York -4:56:02 - LMT 1883 Nov 18 17:00u
+   -5:00 US E%sT
+Zone America/Chicago -5:50:36 - LMT 1883 Nov 18 18:00u
+   -6:00 US C%sT
+Zone America/Denver -6:59:56 - LMT 1883 Nov 18 19:00u
+   -7:00 US M%sT
+Zone America/Los_Angeles -7:52:58 - LMT 1883 Nov 18 20:00u
+   -8:00 US P%sT
+Zone Europe/Madrid -0:14:44 - LMT 1901 Jan  1  0:00u
+    1:00 EU CE%sT
+Zone Africa/Casablanca -0:30:20 - LMT 1913 Oct 26
+    1:00 Morocco %z
+Zone Africa/Johannesburg 1:52:00 - LMT 1892 Feb 8
+   2:00 SA SAST
+Zone Asia/Dubai 3:41:12 - LMT 1920
+   4:00 - %z
+Zone Australia/Adelaide 9:14:20 - LMT 1895 Feb
+   9:30 AS AC%sT
